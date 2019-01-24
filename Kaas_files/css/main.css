@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
+
+html {
+	box-sizing: border-box;
+}
+*{
+	padding: 0;
+	font-family: Aleo;
+	margin: 0;
+}
+footer > div > a > img{
+	margin: auto;
+	width: 50px;
+	display: block;
+	height: 50px;
+}
+footer > div > p{
+	text-align: center;
+}
+footer{
+	height: 130px;
+}
+img {
+	width: 100%;
+}
+body {
+	background-color: #ffffcc;
+}
+footer > div{
+	float: left;
+	margin-top: 25px;
+	width: 33%;
+}
+main, aside, footer{
+	background-color: #EDB91F;
+	margin: 5px;
+}
+
+.nav-links:hover {
+	color: white;
+}
+.logo:hover {
+	color: white;
+}
+
+.navbar {
+	font-size: 20px;
+	padding-bottom: 12px;
+	background-color: rgb(255, 212, 0)
+}
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+.nav-links, .logo {
+	text-decoration: none;
+	color: black;
+}
+.main-nav li {
+	text-align: center;
+	margin: 15px auto;
+}
+.logo {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 22px;
+	margin-top: 12px;
+}
+.navbar-toggle {
+	position: absolute;
+	top: 12px;
+	right: 22px;
+	cursor: pointer;
+	color: black;
+	font-size: 22px;
+}
+.active {
+	display: block;
+}

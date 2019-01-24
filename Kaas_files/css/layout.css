@@ -1,0 +1,169 @@
+/*grid-area's*/
+.header{
+	grid-area: title;
+} 
+.main{
+	grid-area: main;
+}
+.navbar {
+	grid-area: menu;
+}
+.ad1 {
+	grid-area: ad1;
+}
+.ad2 {
+	grid-area: ad2;
+}
+.ad3{
+	grid-area:ad3;
+}
+.foot {
+	grid-area: foot;
+}
+
+body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+        "menu"
+        "main"
+        "main"
+        "ad1"
+		"ad2"
+		"ad3"
+        "foot"; 
+}
+p{
+	padding: 2%;
+	font-size: 14px;
+}
+h1{
+	text-align: center;
+	font-size: 22px;
+}
+.kaas{
+	width: 100px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+.kaasTekst{
+	display: block;
+	margin: auto;
+	width: 100px;
+	text-align: center;
+}
+.winkel{
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+.nieuws{
+	display: block;
+	width: 20%;
+	float: left;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+aside, footer{
+	border-top: 3px solid white;
+	margin: 0;
+}
+main{
+	margin: 0;
+}
+.product{
+	width: 50%;
+	float: left;
+}
+
+@media only screen and (min-width: 600px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"menu  menu"
+			"main  main"
+			"main  main"
+			"ad1   ad2"
+			"ad3 ad3"
+			"foot foot"
+	}
+	.nieuws{
+		width: 10%
+	}
+	p{
+		font-size: 15px;
+	}
+	aside, footer, main{
+		margin-bottom: 6px;
+		margin-left: 3px;
+		margin-right: 3px;
+		border-top: none;
+	}
+}
+@media only screen and (min-width: 900px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"menu menu menu menu menu"
+			"main main main ad1 ad2"
+			"main main main ad3 ad2"
+			"foot foot foot foot  foot"; 
+	}
+	.nieuws{
+		width: 33%;
+		margin-top: 5%;
+	}
+	h1{
+		margin-bottom: 1%;
+		margin-top: 2%;
+	}
+	.product{
+		width: 100%;
+	}
+	
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 54px;
+		align-items: center;
+	}
+
+	.main-nav {
+		display: flex;
+		margin-right: 30px;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.main-nav li {
+		margin: 0;
+	}
+	
+	.nav-links {
+		margin-left: 40px;
+	}
+
+	.logo {
+		margin-top: 0;
+	}
+	
+	.navbar-toggle {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1366px) {
+	body{
+		width: 1366px;
+		margin: auto;
+	}
+}
+
+
+
+
